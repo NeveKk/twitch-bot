@@ -13,8 +13,7 @@
   },
   "keywords": [],
   "author": {
-    "name": "Keven Levesque-Gagné",
-    "email": "keven.levesque-gagne@telus.com"
+    "name": "NeveKk"
   },
   "license": "MIT",
   "devDependencies": {
@@ -30,6 +29,7 @@
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.10",
     "@types/react-modal": "^3.13.1",
+    "@types/tmi.js": "^1.8.2",
     "@typescript-eslint/eslint-plugin": "^5.47.1",
     "@typescript-eslint/parser": "^5.47.1",
     "@vercel/webpack-asset-relocator-loader": "1.7.3",
@@ -57,14 +57,18 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.1",
+    "axios": "^1.2.2",
     "copy-webpack-plugin": "^11.0.0",
+    "dotenv": "^16.0.3",
     "electron-squirrel-startup": "^1.0.0",
     "electron-store": "^8.1.0",
     "open": "^8.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
-    "react-modal": "^3.16.1",
-    "react-redux": "^8.0.5"
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.6.1",
+    "react-toastify": "^9.1.1",
+    "tmi.js": "^1.8.4"
   }
 }

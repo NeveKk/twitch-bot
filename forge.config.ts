@@ -11,7 +11,7 @@ import { rendererConfig } from './webpack.renderer.config';
 
 const config: ForgeConfig = {
     packagerConfig: {
-        icon: `./assets/image/TELUS-logo-white`
+        icon: `./global-assets/image/icon-for-now.png`
     },
     rebuildConfig: {},
     makers: [
@@ -35,11 +35,19 @@ const config: ForgeConfig = {
                 config: rendererConfig,
                 entryPoints: [
                     {
-                        html: './src/index.html',
-                        js: './src/renderer.ts',
+                        html: './src/main-window/index.html',
+                        js: './src/main-window/renderer.ts',
                         name: 'main_window',
                         preload: {
-                            js: './src/preload.ts'
+                            js: './src/main-window/preload.ts'
+                        }
+                    },
+                    {
+                        html: './src/login-window/index.html',
+                        js: './src/login-window/renderer.ts',
+                        name: 'login_window',
+                        preload: {
+                            js: './src/login-window/preload.ts'
                         }
                     }
                 ]
